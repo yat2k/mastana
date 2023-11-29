@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playpen+Sans&display=swap");
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    /* background-image: linear-gradient(rgba(122, 120, 93, 0.7),rgba(132, 102, 83, 0.7)),url('../assets/background.jpg'); */
+    background-image: url("../assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+.pinkbg {
+  background: #fff3f3;
+}
+
+.greenbg {
+  background: #d2e3c8;
+}
+.pink-gradient {
+  /* background: linear-gradient(to top, #cf84fa 0%,   #fe84d5 100%); */
+
+  background: radial-gradient(
+    circle at 3.9% 11.3%,
+    rgb(237, 120, 153) 0%,
+    rgb(238, 216, 190) 71.6%,
+    rgb(249, 238, 221) 99.8%
+  );
+}
+
+/*--Navbar components and classes */
+.navbar {
+  position:fixed;
+  display: flex;
+  padding: 2em 6em;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+nav img {
+  width: 5em;
+  margin-top: 15%;
+  margin-left: 50%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  margin-right: 2em;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative; 
+}
+
+.nav-links ul li a {
+  /* color:#9c1c1c; */
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa{
+  display: none;
+}
+
+.bars{
+  position:absolute;
+  right:2rem;
+  top:1.5rem;
+}
+
+/*--text box in header--*/
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 28px;
+  font-family: "Playpen Sans", cursive;
+  color: #fff;
+}
+
+.lower-text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  bottom: 0.1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.lower-text-box p {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
+
+.text-box-mastana-logo {
+  width: 10%;
+}
+
+/*--The Glow--*/
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/*--About us section--*/
+.about {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 4em;
+  min-height: 100vh;
+}
+
+.about h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.about p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 24px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.about-col-text {
+  flex-basis: 60%;
+  align-self: center;
+
+  /* box-sizing: border-box;
+  transition: 0.5s; */
+  /* border-radius: 10px; */
+}
+.about-col-img {
+  flex-basis: 40%;
+  justify-content: center;
+  align-self: center;
+  /* border-radius: 10px; */
+  /* box-sizing: border-box;
+  transition: 0.5s; */
+}
+.about-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.about-list {
+  list-style: none;
+}
+
+/*--About Carousel--*/
+.about-carousel{
+  height:auto;
+  width:100%;
+  border: 1px solid rgba(0,0,0,1);
+} 
+
+/* .about-col:hover {
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+} */
+
+/*--Charity section--*/
+.charity {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+.charity h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+.charity-col {
+  flex-basis: 40%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.charity-col img {
+  width: 100%;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transition: 0.5s; */
+}
+/* .layer:hover {
+  background: rgba(164, 87, 150, 0.7);
+} */
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.charity-col p {
+  text-align: justify;
+}
+.donate-button{
+  background-color: #DCBFFF;
+  padding: 2%;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.donate-button:hover{
+background-color: #D0A2F7;
+}
+/* .layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+} */
+
+/*--Committee--*/
+.committe {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.committe h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+}
+.committee-card {
+  align-items: center;
+  text-align: center;
+}
+.project-card{
+  border: none;
+  border-radius: none;
+}
+
+.committe h2{
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+/*--Gallery--*/
+
+.gallery-class {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.gallery-class h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+}
+
+.gallery-carousel {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+}
+.gallery-image {
+  width: 90%;
+  height: 580px;
+}
+
+/*--Sponsors--*/
+.sponsors {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2em;
+}
+.sponsors h1 {
+  font-size: 62px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  padding-top: 1em;
+}
+
+.sponsor-image{
+  width:20%;
+  margin-bottom:2em;
+}
+
+/*--Contact section--*/
+/*-----Footer-----*/
+
+.footer-top {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-content {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-content h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.footer-email {
+  padding-top: 0.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-socials a {
+  font-size: 2rem;
+  color: var(--text-color-white);
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*--For responsiveness--*/
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 40px;
+  }
+  nav img {
+    display: none;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    /* height: 100vh; */
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    margin-right:0em;
+  }
+  nav .fa{
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .aboutBook {
+    display: inline-flex;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .about h1,
+  .charity h1,
+  .committe h1 {
+    padding-bottom: 1%;
+  }
+  .gallery-carousel {
+    width: 100%;
+    height: 250px;
+  }
+  .gallery-image {
+    width: 100%;
+    height: 250px;
+  }
+  .sponsors h1 {
+    padding-top: 2em;
+    padding-bottom: 1%;
+  }
+  .sponsor-image{
+    width:70%;
+    margin-bottom:2em;
+  }
+
+  footer {
+    padding-top: 1rem;
+  }
+
+  .footer-top {
+    padding: 3rem 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
