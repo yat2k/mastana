@@ -14,7 +14,7 @@ function Home() {
       
         <div className="text-box">
           <h1>Mastana</h1>
-          <p className="glow">Sunday 3rd March, West Road Concert Hall</p>
+          <p className="glow">Sunday 3<sup>rd</sup> March, West Road Concert Hall</p>
         </div>
         <div className="lower-text-box">
           <p>Join us for our biggest show yet!</p>

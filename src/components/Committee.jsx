@@ -61,21 +61,21 @@ export default function Committee(){
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <MembersCards
-              title="Adhvika"
+              title="Adhvika Muthukrishnan"
               imgPath={fandm1}
               description=""
             />
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Minerva"
+              title="Minerva Maheshwari"
               imgPath={fandm2}
               description=""
             />
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Shangavi"
+              title="Shangavi Ganeshan"
               imgPath={fandm3}
               description=""
             />
@@ -84,14 +84,14 @@ export default function Committee(){
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <MembersCards
-              title="Vakeeta"
+              title="Vakeeta Rubakumar"
               imgPath={fandm4}
               description=""
             />
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Vedaangh"
+              title="Vedaangh Rungta"
               imgPath={fandm5}
               description=""
             />
@@ -110,14 +110,14 @@ export default function Committee(){
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Palak"
+              title="Palak Patel"
               imgPath={acts2}
               description=""
             />
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Shivansh"
+              title="Shivansh Pandey"
               imgPath={acts3}
               description=""
             />
@@ -126,7 +126,7 @@ export default function Committee(){
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
           <MembersCards
-              title="Shriram"
+              title="Shriram Mahesh"
               imgPath={acts4}
               description=""
             />
@@ -138,7 +138,7 @@ export default function Committee(){
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <MembersCards
-              title="Ishika"
+              title="Ishika Samanta"
               imgPath={prod1}
               description=""
             />
@@ -152,7 +152,7 @@ export default function Committee(){
           </Col>
           <Col md={4} className="project-card">
           <MembersCards
-              title="Parth"
+              title="Parth Narlawar"
               imgPath={prod3}
               description=""
             />
